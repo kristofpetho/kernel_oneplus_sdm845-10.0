@@ -4248,7 +4248,7 @@ retry:
 		return ret;
 
 	while (1) {
-		uint32_t cmd;
+		uint32_t cmd = 0;
 		struct binder_transaction_data_secctx tr;
 		struct binder_transaction_data *trd = &tr.transaction_data;
 		struct binder_work *w = NULL;
